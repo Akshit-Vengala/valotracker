@@ -1,0 +1,20 @@
+/* PulsatingProfilePic.module.css */
+
+@keyframes pulsate-border {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+.pulsatingBorder {
+    animation: pulsate-border 2s infinite;
+    border: 4px solid transparent; /* Adjust the border width as needed */
+    border-image: linear-gradient(45deg, #f06, #9f6) 1;
+    border-image-slice: 1;
+  }
